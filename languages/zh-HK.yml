@@ -16,6 +16,7 @@ menu:
   categories: 分類
   tags: 標籤
   about: 關於
+  blog: 博客
 
 # 歸檔頁、分類頁、標籤頁
 page:
@@ -46,6 +47,8 @@ social:
   wechat: 微信
   telegram: Telegram
   qq: QQ
+  email: E-Mail
+  docker: "Ducker Hub"
 
 # 文章
 post:

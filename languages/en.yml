@@ -16,6 +16,7 @@ menu:
   categories: Categories
   tags: Tags
   about: About
+  blog: Blog
 
 # Archives page, Categories page, Tags page
 page:
@@ -46,6 +47,8 @@ social:
   wechat: Wechat
   telegram: Telegram
   qq: QQ
+  email: E-Mail
+  docker: "Ducker Hub"
 
 # Article
 post:

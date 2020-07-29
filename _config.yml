@@ -11,7 +11,7 @@ shake_file: true
 
 # If true, will add site-subtitle to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml`.
-index_subtitle: false
+index_subtitle: true
 
 # Set a canonical link tag for your Hexo site.
 # See: https://support.google.com/webmasters/answer/139066
@@ -22,7 +22,7 @@ canonical: true
 # ---------------------------------------------------------------
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification:
+google_site_verification: m3MyvVSe6xkVWXCv3fcUI8BvDaNnLqvI9aEXAWmkkrI
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -51,9 +51,11 @@ sougou_site_verification:
 # Select your icon name, see: https://fontawesome.com/icons
 menu:
   home: / || fas fa-home
+  blog: https://blog.hades001.com/index.html || fas fa-blog
   archives: /archives/ || fas fa-folder-open
-  # categories: /categories/ || fas fa-layer-group
-  # tags: /tags/ || fas fa-tags
+  categories: /categories/ || fas fa-layer-group
+  tags: /tags/ || fas fa-tags
+  about: /about/ || fas fa-user
   # You can add a secondary menu like follow.
   # xxx1: javascript:; || fa(s|r|l|d|b) fa-xxx
 
@@ -133,19 +135,19 @@ header:
   enable: true
   show_on:
     # Whether to show on the article page.
-    post: true
+    post: false
   # If you set a percentage, it will be calculated based on the height of screen (Supports all CSS units)
   height: 80%
   # Background image of site header.
   bg_image:
-    enable: false
+    enable: true
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url:
+    url: https://images.hades001.com/site/background-002.jpg
   # Mask effect of the background image.
   mask:
-    enable: false
+    enable: true
     # Opacity of the mask (value: 0 ~ 1)
     opacity: 0.5
   nav:
@@ -155,7 +157,7 @@ header:
     bg_color: "#333"
   # The icon that prompts the user to pull down.
   scroll_down_icon:
-    enable: false
+    enable: true
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     name: fas fa-angle-down
     animation: true
@@ -201,9 +203,9 @@ footer:
   copyright:
     enable: true
     # If not set, will be used `author` from Hexo main config (e.g. liuyib All Rights Reserved)
-    text:
+    text: 韩立翔
     # Start time. If not set, the current year will be used.
-    since:
+    since: 2017
     # End time. If not set, the current year will be used.
     end:
   # The icon between the copyright and the owner.
@@ -227,9 +229,9 @@ footer:
     version: true
   # Beian information for Chinese users, see: http://www.miitbeian.gov.cn/
   beian:
-    enable: false
+    enable: true
     # 备案 XXXXXXXX 号
-    icp:
+    icp: 鄂ICP备17017044号-2
   # Any custom text (e.g. Hosted by <a href="https://pages.github.com/" rel="noopener" target="_blank">Github Pages</a>)
   custom:
     enable: false
@@ -237,7 +239,7 @@ footer:
 
 # Creative Commons 4.0 International License
 creative_commons:
-  enable: true
+  enable: false
   # Optional values: BY | BY-SA | BY-ND | BY-NC | BY-NC-SA | BY-NC-ND
   # For details, please see: https://creativecommons.org/share-your-work/licensing-types-examples/
   license: BY-NC-SA
@@ -250,7 +252,7 @@ creative_commons:
   #   it | lv | lt | hu | nl | no | pt | pt_BR | pl | ro | sl | fi | sv
   #   tr | is | cs | el | be | ru | zh | zh_TW | uk | ar | fa | bn | ja | ko
   # If not set, `en` will be used by default.
-  language:
+  language: zh
 
 # Back to top
 back2top:
@@ -286,16 +288,16 @@ author:
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url: /images/icons/stun-logo.svg
+    url: https://images.hades001.com/site/avatar.jpg
     # If true, the avatar would be displayed in a circle.
-    rounded: false
+    rounded: true
     # Opacity of avatar (value: 0 ~ 1)
     opacity: 1
     # Mouse hover animation
     # Optional values: turn | shake
     animation: turn
   # Your favorite motto.
-  motto: hello world
+  motto: Practice makes perfect
 
 # Social links
 # Value before `||` is the target link, value after `||` is the name of FontAwesome icon.
@@ -304,10 +306,12 @@ author:
 # If you can`t find a suitable icon, you can choose to display text by adding the `origin:` prefix.
 # e.g. `origin:sf`, so `sf` will be displayed.
 social:
-  github: https://github.com/ || fab fa-github
-  google: https://plus.google.com/ || fab fa-google
-  twitter: https://twitter.com/ || fab fa-twitter
-  youtube: https://youtube.com/ || fab fa-youtube
+  github: https://gitee.com/hades001 || fab fa-github
+  #google: https://plus.google.com/ || fab fa-google
+  #twitter: https://twitter.com/ || fab fa-twitter
+  #youtube: https://youtube.com/ || fab fa-youtube
+  email: mailto:hanlixiang@hades001.com || fa fa-envelope
+  docker: https://hub.docker.com/u/hades001 || fab fa-docker
   # segmentfault: https://segmentfault.com/ || origin:sf
   # weibo: https://weibo.com/ || fab fa-weibo
   # zhihu: https://www.zhihu.com/ || origin:知
@@ -316,7 +320,7 @@ social:
   # qq: yournumber || fab fa-qq
 
 social_setting:
-  enable: false
+  enable: true
   # Only show by icon.
   icon_only: true
 
@@ -324,7 +328,7 @@ social_setting:
 toc:
   enable: true
   # Automatically add list number to toc.
-  list_number: true
+  list_number: false
   # If true, all words will be placed on the next lines when they overflow.
   wrap: true
   # If true, the toc of post will always be displayed, rather than the activated part of it.
@@ -363,9 +367,9 @@ codeblock:
   style: default
   # The theme of code highlight.
   # Optional values: light | dark | ocean
-  highlight: light
+  highlight: ocean
   # Whether to wrap when code overflow.
-  word_wrap: false
+  word_wrap: true
 
 # Add a line below h1, h2 tags.
 heading_line: true
@@ -399,7 +403,7 @@ post_meta:
   # Dependency: https://github.com/willin/hexo-wordcount/
   # !!! Don't enable this before install dependency by `npm install hexo-wordcount --save` in hexo root directory.
   reading_time:
-    enable: false
+    enable: true
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     icon: far fa-clock
     # Set reading speed to count reading time.
@@ -412,7 +416,7 @@ post_meta:
   # Dependency: https://github.com/willin/hexo-wordcount/
   # !!! Don't enable this before install dependency by `npm install hexo-wordcount --save` in hexo root directory.
   word_count:
-    enable: false
+    enable: true
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     icon: far fa-file-word
 
@@ -421,7 +425,7 @@ post_list:
   # Whether to paginate.
   paginate:
     home: true
-    archives: false
+    archives: true
   # Whether to show the cover image of post.
   cover_image:
     home: false
@@ -528,8 +532,8 @@ minivaline:
 # Livere
 # See: https://www.livere.com/
 livere:
-  enable: false
-  uid:
+  enable: true
+  uid: MTAyMC81MDQ5Ni8yNjk4Mw==
 
 # Disqus
 # See: https://disqus.com/
@@ -543,9 +547,9 @@ disqus:
 utterances:
   enable: false
   # Github username.
-  owner:
+  owner: hades002
   # Github repository.
-  repo:
+  repo: comments
   # Choose the mapping between blog posts and GitHub issues.
   # Optional values: pathname | url | title | og:title
   mapping: title
@@ -586,7 +590,7 @@ busuanzi:
 
 # Google analytics ID
 # See: https://analytics.google.com/
-google_analytics:
+google_analytics: UA-169808785-1
 
 # Baidu analytics ID
 # See: https://tongji.baidu.com/
@@ -614,7 +618,7 @@ algolia_search:
 # Local Search
 # See: https://github.com/wzpan/hexo-generator-search/
 local_search:
-  enable: false
+  enable: true
 
 # ---------------------------------------------------------------
 # Background config
@@ -658,12 +662,12 @@ math:
   # ! https://liuyib.github.io/hexo-theme-stun/zh-CN/advanced/third-part.html#mathjax
   # ! -------------------------------------------------------------------------------
   # Optional values: mathjax | katex
-  engine: katex
+  engine: mathjax
   mathjax:
     cdn: https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML
     # See: https://mhchem.github.io/MathJax-mhchem/
     mhchem:
-      enable: false
+      enable: true
       mhchem_js: https://cdn.jsdelivr.net/npm/mathjax-mhchem@3.3.2/mhchem.min.js
   katex:
     cdn: https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css
@@ -679,7 +683,7 @@ math:
 
 # Fancybox
 # See: https://fancyapps.com/fancybox/3/
-fancybox: false
+fancybox: true
 
 # Click to enlarge picture.
 zoom_image:
@@ -703,9 +707,9 @@ gallery_waterfall:
 # Lazy load the images of post.
 # See: https://github.com/tuupola/lazyload
 lazyload:
-  enable: false
+  enable: true
   # Optional values: gif | block
-  placeholder: gif
+  placeholder: block
 
 # Quicklink support
 # See: https://github.com/GoogleChromeLabs/quicklink/
@@ -737,7 +741,7 @@ quicklink:
 # Pjax
 # See: https://github.com/MoOx/pjax/
 pjax:
-  enable: false
+  enable: true
   # When switching pages, scroll to the bottom of the top image.
   avoid_banner: false
   # ! --------------------------------------------------
@@ -750,7 +754,7 @@ pjax:
   switchesOptions:
   history: true
   # If you enable this, you must set `avoid_banner: false` firstly.
-  scrollTo: false
+  scrollTo: 0
   scrollRestoration: false
   cacheBust: false
   debug: false
@@ -796,7 +800,7 @@ tag_cloud:
 # Eliminate the old version of IE browser (IE6~11).
 # See: https://support.dmeng.net/upgrade-your-browser.html
 kill_old_ie:
-  enable: false
+  enable: true
   # The URL of warning page (Please use "" to wrap the value).
   # ! ----------------------------------------------------------------
   # ! Usually you don't need to set this option, just use the default.
