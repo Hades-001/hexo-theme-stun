@@ -144,7 +144,7 @@ header:
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url: https://images.hades001.com/site/background-002.jpg
+    url: https://images.hades001.com/WebSite/background-002.jpg
   # Mask effect of the background image.
   mask:
     enable: true
@@ -288,7 +288,7 @@ author:
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url: https://images.hades001.com/site/avatar.jpg
+    url: https://images.hades001.com/WebSite/avatar.jpg
     # If true, the avatar would be displayed in a circle.
     rounded: true
     # Opacity of avatar (value: 0 ~ 1)
