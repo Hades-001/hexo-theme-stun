@@ -207,7 +207,7 @@ footer:
     # Start time. If not set, the current year will be used.
     since: 2017
     # End time. If not set, the current year will be used.
-    end:
+    end: 2020
   # The icon between the copyright and the owner.
   icon:
     enable: true
@@ -234,8 +234,8 @@ footer:
     icp: 鄂ICP备17017044号-2
   # Any custom text (e.g. Hosted by <a href="https://pages.github.com/" rel="noopener" target="_blank">Github Pages</a>)
   custom:
-    enable: false
-    text:
+    enable: true
+    text: CDN BY <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY <a target="_blank" rel="noopener" href="https://cn.aliyun.com/product/oss"><b>OSS</b></a>
 
 # Creative Commons 4.0 International License
 creative_commons:
@@ -571,7 +571,7 @@ utterances:
 # Busuanzi statistics
 # See: https://busuanzi.ibruce.info/
 busuanzi:
-  enable: false
+  enable: true
   # Only show by icon.
   icon_only: false
   # Number of unique visitor to the entire site.
