@@ -207,7 +207,7 @@ footer:
     # Start time. If not set, the current year will be used.
     since: 2017
     # End time. If not set, the current year will be used.
-    end: 2020
+    end: 2021
   # The icon between the copyright and the owner.
   icon:
     enable: true
@@ -219,23 +219,23 @@ footer:
     color: "#ff0000"
   # Hexo link
   powered:
-    enable: true
+    enable: false
     # Whether to show version after Hexo link (e.g. vX.X.X)
     version: true
   # Theme link
   theme:
-    enable: true
+    enable: false
     # Whether to show version after theme link (e.g. vX.X.X)
     version: true
   # Beian information for Chinese users, see: http://www.miitbeian.gov.cn/
   beian:
-    enable: true
+    enable: false
     # 备案 XXXXXXXX 号
     icp: 鄂ICP备17017044号-2
   # Any custom text (e.g. Hosted by <a href="https://pages.github.com/" rel="noopener" target="_blank">Github Pages</a>)
   custom:
     enable: true
-    text: CDN BY <a target="_blank" rel="noopener" href="https://www.jsdelivr.com/">jsDelivr</a> | HOST BY <a target="_blank" rel="noopener" href="https://cn.aliyun.com/product/oss">OSS</a>
+    text: CDN BY <a target="_blank" rel="noopener" href="https://www.jsdelivr.com">jsDelivr</a> | HOST BY <a target="_blank" rel="noopener" href="https://cn.aliyun.com/product/oss">OSS</a><br><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn">鄂ICP备17017044号-2</a><br><a target="_blank" rel="noopener" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42900602000141" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="/images/icons/gongan.png" style="float:left;"/>鄂公网安备 42900602000141号</a>
 
 # Creative Commons 4.0 International License
 creative_commons:
